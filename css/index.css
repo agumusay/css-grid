@@ -8,14 +8,20 @@ html{
     font-size: 1.5rem;
 }
 
-.container{
+body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    height: 90%;
     display: grid;
     background-color: hotpink;
     grid-template: repeat(4, 25%) / repeat(4, 25%) ;
-    row-gap: 10px;
-    column-gap: 10px;
     grid-template-areas: "1 2 3 4 "
     "5 6 7 8"
     "9 10 11 12"
@@ -26,7 +32,14 @@ div{
     background-color: aqua;
     color: black;
     place-content: center;
+    border: 5px solid hotpink;
 }
+
+p{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 
 .box-2{
     grid-column: 2 / span 2;
